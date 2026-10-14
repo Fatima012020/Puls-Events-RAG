@@ -1,0 +1,39 @@
+@'
+# Environnement Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+.vscode/
+
+# Index vectoriel FAISS
+faiss_index/
+
+# Embeddings générés
+data/vectorized/
+
+# Fichiers de données volumineux
+data/raw/
+data/processed/
+data/chunks/
+
+# Fichiers temporaires
+arborescence.txt
+*.log
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Path .gitignore -Encoding UTF8
+
+@'
+
+# Livrables à vérifier avant publication
+Rapport_technique_Puls_Events_RAG.docx
+Rapport_technique_Puls_Events_RAG.pdf
+Presentation_soutenance_Puls_Events_RAG.pptx
+'@ | Add-Content .gitignore

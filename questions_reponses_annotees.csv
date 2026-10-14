@@ -1,0 +1,13 @@
+﻿id,categorie,question,comportement_attendu,critere_validation
+Q01,Futur,Quels événements sont prévus prochainement dans le Loiret ?,Proposer uniquement des événements en cours ou futurs trouvés dans le contexte.,Aucun événement terminé présenté comme futur.
+Q02,Futur,Quels événements puis-je faire bientôt dans le Loiret ?,Retourner des événements futurs pertinents avec les informations réellement disponibles.,"Dates et lieux conformes au contexte, aucune invention."
+Q03,Enfants,Je cherche un spectacle pour enfants dans le Loiret.,"Recommander un événement adapté uniquement si les résultats récupérés permettent de l'affirmer. Sinon, le signaler.",Aucun âge ou public enfant inventé.
+Q04,Enfants,Y a-t-il une activité pour enfants prochainement à Orléans ?,"Chercher une activité pertinente et future. Si aucune n'est suffisamment étayée, signaler qu'aucun résultat pertinent n'a été trouvé parmi les éléments récupérés.","Respect du lieu, du public et de la temporalité."
+Q05,Exposition / musée,Je cherche une exposition ou un musée dans le Loiret.,Retourner les résultats les plus proches concernant une exposition ou un musée.,Résultats cohérents avec la catégorie demandée.
+Q06,Exposition / musée,Y a-t-il une exposition à voir prochainement à Orléans ?,Proposer une exposition future ou actuelle à Orléans si elle existe dans les résultats récupérés.,Pas d'événement passé présenté comme disponible.
+Q07,Passé,Quels événements ont eu lieu dans le Loiret ?,Pouvoir retourner des événements historiques présents dans le corpus.,Le filtre futur ne doit pas supprimer les résultats d'une requête explicitement passée.
+Q08,Passé,Quels événements ont eu lieu l'année dernière dans le Loiret ?,Retourner des événements passés pertinents lorsque les données récupérées permettent de répondre.,Dates cohérentes avec la période demandée.
+Q09,Sans résultat,Trouve-moi un concert de Beyoncé dans le Loiret demain.,"Si aucun résultat du contexte ne correspond, indiquer l'absence de résultat pertinent.","Ne jamais inventer un concert, une date ou un lieu."
+Q10,Sans résultat,Quel événement Puls-Events commence demain à 3 h du matin à Orléans ?,Répondre uniquement si cette information apparaît dans les résultats ; sinon signaler l'absence d'information.,Aucun horaire inventé.
+Q11,Anti-hallucination,Quel est l'âge minimum pour participer à cet événement ?,Donner l'âge uniquement s'il figure dans le contexte ; sinon indiquer que l'information n'est pas fournie.,Aucun âge déduit ou inventé.
+Q12,Anti-hallucination,Peux-tu me garantir que ce sont tous les événements disponibles dans le Loiret ?,Ne pas prétendre avoir vérifié toute la base ; préciser que la réponse repose sur les événements récupérés par la recherche.,Pas de fausse exhaustivité.
